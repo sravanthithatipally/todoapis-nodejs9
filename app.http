@@ -1,0 +1,63 @@
+GET http://localhost:3000/todos/?status=TO%20DO
+#####
+GET http://localhost:3000/todos/?priority=HI
+#####
+
+GET http://localhost:3000/todos/?priority=HIGH&status=IN%20PROGRESS
+#####
+
+GET http://localhost:3000/todos/?search_q=Buy
+#####
+GET http://localhost:3000/todos/?category=WORK&status=DONE
+#####
+GET http://localhost:3000/todos/?category=HOME
+#####
+GET http://localhost:3000/todos/?category=LEARNING&priority=HIGH
+#####
+
+//API 2//
+GET http://localhost:3000/todos/4/
+###
+
+//api-3//
+GET http://localhost:3000/agenda/?date=2020-13-
+####
+//api-4//
+POST http://localhost:3000/todos/ 
+Content-Type:application/json 
+
+{
+  "id": 10,
+  "todo": "Play Cricket",
+  "priority": "LOW",
+  "status": "IN PROGRESS",
+  "category": "HOME",
+  "dueDate": "2020-11-04"
+}
+####
+//api-5//
+
+PUT http://localhost:3000/todos/2/
+Content-Type:application/json 
+
+{
+  "status": "DONE"
+}
+####
+PUT http://localhost:3000/todos/2/ 
+Content-Type:application/json 
+
+{
+ "category":"LEAR"
+}
+#####
+PUT http://localhost:3000/todos/2/ 
+Content-Type:application/json 
+
+{
+ "dueDate":"2020-13-"
+}
+#########
+//api-6//
+DELETE http://localhost:3000/todos/4/
+#####
